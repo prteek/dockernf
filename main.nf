@@ -51,11 +51,10 @@ workflow {
     else if (params.ops == 'push') {
         push(IMAGE, params.IMAGE_URI)
     }
-    else if (params.ops == 'all') {
-        build(DOCKERFILEPATH, IMAGE)
-        push(IMAGE, params.IMAGE_URI)
-    }
     else if (params.ops == 'create_ecr_repo') {
         create_ecr_repo(params.ECR_REPO)
+    }
+    else {
+        log.info("Please provide a valid operation: 'build', 'push', or 'create_ecr_repo'")
     }
 }
