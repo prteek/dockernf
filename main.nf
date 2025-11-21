@@ -9,7 +9,7 @@ process build {
 
     script:
     """
-    docker buildx build --platform linux/amd64 -t ${IMAGE} . -f ${DOCKERFILEPATH} --output type=docker
+    docker build -t ${IMAGE} . -f ${DOCKERFILEPATH}
     """
 }
 
