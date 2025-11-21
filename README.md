@@ -5,6 +5,8 @@ This tool helps ease working with Docker for setting up Nextflow jobs.
 
 ## Setup
 
+You'll need to have Docker and Nextflow installed on your system. Additionally, ensure you have AWS CLI configured with the necessary permissions to create ECR repositories and push images.
+
 A parameter file or runtime parameters can be passed which must include the following
 
 ```yaml
