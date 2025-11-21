@@ -1,4 +1,4 @@
-# Dockernf
+# Dockernf
 
 This tool helps ease working with Docker for setting up Nextflow jobs.
 
