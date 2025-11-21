@@ -1,1 +1,4 @@
 params.yml
+work/
+results/
+.nextflow*
